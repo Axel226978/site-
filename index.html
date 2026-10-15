@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coup d'pouce - Accompagnement scolaire</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <svg class="logo-icon" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="30" cy="30" r="28" stroke="#2D7A3E" stroke-width="3"/>
+                        <path d="M20 25C20 21.134 23.134 18 27 18H33C36.866 18 40 21.134 40 25V35C40 38.866 36.866 42 33 42H27C23.134 42 20 38.866 20 35V25Z" fill="#2D7A3E"/>
+                        <circle cx="27" cy="28" r="2" fill="white"/>
+                        <circle cx="33" cy="28" r="2" fill="white"/>
+                        <path d="M27 35C27 35 28.5 37 30 37C31.5 37 33 35 33 35" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span class="logo-text">Coup d'pouce</span>
+                </div>
+                <a href="#contact" class="btn btn-primary">Contactez-moi</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="hero-badge">Bienvenue chez Coup d'pouce</span>
+                    <h1>Accompagnement des enfants et adolescents dans leur parcours scolaire</h1>
+                    <p class="hero-subtitle">Institutrice primaire • Coaching scolaire • Hypno-coaching mental • Soutien scolaire personnalisé</p>
+                    <div class="hero-cta">
+                        <a href="#services" class="btn btn-primary btn-large">Découvrir mes services</a>
+                        <a href="#contact" class="btn btn-outline btn-large">Prendre rendez-vous</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Années d'expérience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Élèves accompagnés</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">Taux de réussite</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="services-background"></div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Mes services</span>
+                <h2>Domaines d'intervention</h2>
+                <p>Des solutions adaptées à chaque besoin pour accompagner votre enfant vers la réussite</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-service="devoirs" onclick="openModal(this)">
+                    <div class="service-icon">
+                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=100&h=100&fit=crop" alt="Aide aux devoirs">
+                    </div>
+                    <h3>Aide aux devoirs</h3>
+                    <p>Accompagnement personnalisé pour les devoirs et apprentissages quotidiens</p>
+                </div>
+                <div class="service-card" data-service="niveau" onclick="openModal(this)">
+                    <div class="service-icon">
+                        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=100&h=100&fit=crop" alt="Mise à niveau">
+                    </div>
+                    <h3>Mise à niveau</h3>
+                    <p>Rattrapage des lacunes et consolidation des bases fondamentales</p>
+                </div>
+                <div class="service-card" data-service="examens" onclick="openModal(this)">
+                    <div class="service-icon">
+                        <img src="https://images.unsplash.com/photo-1456324504439-367cee3b3c32?w=100&h=100&fit=crop" alt="Préparation aux examens">
+                    </div>
+                    <h3>Préparation aux examens</h3>
+                    <p>CEB, CE1D : préparation complète et stratégies de réussite</p>
+                </div>
+                <div class="service-card" data-service="apprentissage" onclick="openModal(this)">
+                    <div class="service-icon">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=100&h=100&fit=crop" alt="Stratégies d'apprentissage">
+                    </div>
+                    <h3>Stratégies d'apprentissage</h3>
+                    <p>Méthodes de travail efficaces adaptées à chaque profil</p>
+                </div>
+                <div class="service-card" data-service="etude" onclick="openModal(this)">
+                    <div class="service-icon">
+                        <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=100&h=100&fit=crop" alt="Stratégie d'étude">
+                    </div>
+                    <h3>Stratégie d'étude</h3>
+                    <p>Organisation du travail et techniques de mémorisation</p>
+                </div>
+                <div class="service-card" data-service="decrochage" onclick="openModal(this)">
+                    <div class="service-icon">
+                        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=100&h=100&fit=crop" alt="Décrochage scolaire">
+                    </div>
+                    <h3>Décrochage scolaire</h3>
+                    <p>Remobilisation et reprise de confiance en l'école</p>
+                </div>
+                <div class="service-card" data-service="stress" onclick="openModal(this)">
+                    <div class="service-icon">
+                        <img src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=100&h=100&fit=crop" alt="Stress">
+                    </div>
+                    <h3>Stress</h3>
+                    <p>Gestion du stress et de l'anxiété liés à la scolarité</p>
+                </div>
+                <div class="service-card" data-service="confiance" onclick="openModal(this)">
+                    <div class="service-icon">
+                        <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=100&h=100&fit=crop" alt="Confiance en soi">
+                    </div>
+                    <h3>Confiance en soi</h3>
+                    <p>Développement de l'estime de soi et de la confiance</p>
+                </div>
+                <div class="service-card" data-service="harcelement" onclick="openModal(this)">
+                    <div class="service-icon">
+                        <img src="https://images.unsplash.com/photo-1529390079861-591f6a4c508f?w=100&h=100&fit=crop" alt="Harcèlement">
+                    </div>
+                    <h3>Harcèlement</h3>
+                    <p>Accompagnement face au harcèlement scolaire</p>
+                </div>
+                <div class="service-card" data-service="relationnel" onclick="openModal(this)">
+                    <div class="service-icon">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=100&h=100&fit=crop" alt="Problèmes relationnels">
+                    </div>
+                    <h3>Problèmes relationnels</h3>
+                    <p>Gestion des relations avec les camarades et enseignants</p>
+                </div>
+                <div class="service-card" data-service="phobie" onclick="openModal(this)">
+                    <div class="service-icon">
+                        <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?w=100&h=100&fit=crop" alt="Phobie scolaire">
+                    </div>
+                    <h3>Phobie scolaire</h3>
+                    <p>Accompagnement pour phobie scolaire ou autres troubles anxieux</p>
+                </div>
+                <div class="service-card" data-service="rentree" onclick="openModal(this)">
+                    <div class="service-icon">
+                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=100&h=100&fit=crop" alt="Préparation rentrée">
+                    </div>
+                    <h3>Préparation rentrée</h3>
+                    <p>Préparation et aide à la rentrée scolaire</p>
+                </div>
+                <div class="service-card" data-service="changement" onclick="openModal(this)">
+                    <div class="service-icon">
+                        <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?w=100&h=100&fit=crop" alt="Changement d'école">
+                    </div>
+                    <h3>Changement d'école</h3>
+                    <p>Accompagnement lors d'un changement d'école ou de classe</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="about-background"></div>
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="about-image-wrapper">
+                        <div class="about-image-inner">
+                            <svg viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="150" cy="150" r="140" fill="#E8F5E9"/>
+                                <circle cx="150" cy="120" r="50" fill="#2D7A3E"/>
+                                <path d="M80 250C80 200 110 180 150 180C190 180 220 200 220 250" fill="#2D7A3E"/>
+                                <circle cx="135" cy="115" r="5" fill="white"/>
+                                <circle cx="165" cy="115" r="5" fill="white"/>
+                                <path d="M140 135C140 135 145 145 150 145C155 145 160 135 160 135" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <span class="section-badge">À propos</span>
+                    <h2>À propos de moi</h2>
+                    <p>Je suis Bénédicte Dupuis, institutrice primaire et coach scolaire passionnée par l'accompagnement des enfants et adolescents dans leur parcours éducatif.</p>
+                    <p>Mon approche combine mon expertise pédagogique avec des techniques de coaching et d'hypno-coaching mental pour offrir un soutien complet et personnalisé à chaque élève.</p>
+                    <div class="credentials">
+                        <div class="credential-item">
+                            <span class="credential-icon">✓</span>
+                            <span>Institutrice primaire diplômée</span>
+                        </div>
+                        <div class="credential-item">
+                            <span class="credential-icon">✓</span>
+                            <span>Coach scolaire certifiée</span>
+                        </div>
+                        <div class="credential-item">
+                            <span class="credential-icon">✓</span>
+                            <span>Hypno-coach mentale</span>
+                        </div>
+                        <div class="credential-item">
+                            <span class="credential-icon">✓</span>
+                            <span>Expérience approfondie</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-background"></div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Contact</span>
+                <h2>Contactez-moi</h2>
+                <p>Je suis à votre disposition pour discuter des besoins de votre enfant</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contact@coupdpouce.be</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <p>+32 XXX XX XX XX</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Localisation</h4>
+                            <p>Belgique</p>
+                        </div>
+                    </div>
+                    <div class="qr-code-section">
+                        <h4>Scannez pour visiter le site</h4>
+                        <div class="qr-code">
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://coupdpouce.be&bgcolor=2D7A3E&color=ffffff" alt="QR Code Coup d'pouce">
+                        </div>
+                        <p>www.coupdpouce.be</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Votre téléphone">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Votre message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Service Detail -->
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-header">
+                <div class="modal-icon"></div>
+                <h2 id="modalTitle"></h2>
+            </div>
+            <div class="modal-body">
+                <p id="modalDescription"></p>
+                <div class="modal-details">
+                    <h4>Ce service inclut :</h4>
+                    <ul id="modalDetails"></ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#contact" class="btn btn-primary btn-full" onclick="closeModal()">Me contacter pour ce service</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">Coup d'pouce</span>
+                </div>
+                <p class="footer-text">© 2025 Coup d'pouce - Bénédicte Dupuis | Institutrice primaire - Coach scolaire</p>
+                <p class="footer-credit">Site créé par qrinfoinformatique</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
